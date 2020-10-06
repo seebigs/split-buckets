@@ -1,6 +1,6 @@
 {
   "name": "split-buckets",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Split randomly into evenly distributed buckets and get the same result every time",
   "keywords": [
     "sticky",
