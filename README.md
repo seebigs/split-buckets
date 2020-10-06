@@ -1,5 +1,5 @@
 # split-buckets
-An installable library that will split randomly into evenly distributed buckets and give you the same result every time
+An installable library that will randomly group into evenly distributed buckets and give you the same result every time
 
 - Perfect for A/B testing
 - Release experiences only to a percentage of traffic
