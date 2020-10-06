@@ -1,0 +1,39 @@
+{
+  "name": "split-buckets",
+  "version": "0.0.1",
+  "description": "Split randomly into evenly distributed buckets and get the same result every time",
+  "keywords": [
+    "sticky",
+    "bucketing",
+    "split-test",
+    "percentage"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test-jest": "jest",
+    "test": "npm run lint && npm run test-jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seebigs/split-buckets.git"
+  },
+  "author": "Chris Bigelow <seebigswork@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seebigs/split-buckets/issues"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jest": "^26.5.2",
+    "nanoid": "^3.1.12"
+  },
+  "dependencies": {
+    "seebigs-each": "^1.1.0"
+  }
+}
