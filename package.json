@@ -8,8 +8,7 @@
     "split-test",
     "percentage"
   ],
-  "type": "module",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "lint": "eslint .",
     "test-jest": "jest",

@@ -1,6 +1,6 @@
-import doGetBucket from './lib/getBucket.js';
+const doGetBucket = require('./lib/getBucket.js');
 
-export default function SplitBuckets(groupName, allocations, seed) {
+function SplitBuckets(groupName, allocations, seed) {
     this.groupName = groupName || '';
     this.allocations = allocations || [];
     this.seed = seed || 1;
@@ -9,3 +9,5 @@ export default function SplitBuckets(groupName, allocations, seed) {
 SplitBuckets.prototype.getBucket = function getBucket(id) {
     return doGetBucket(id, this.groupName, this.allocations, this.seed);
 };
+
+module.exports = SplitBuckets;

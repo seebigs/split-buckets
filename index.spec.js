@@ -1,4 +1,4 @@
-import SplitBuckets from './index.js';
+const SplitBuckets = require('./index.js');
 
 describe('SplitBuckets', () => {
 
