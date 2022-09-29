@@ -27,8 +27,8 @@ const test1 = new SplitBuckets('test1', [
     },
 ]);
 
-test1.getBucket('XXX-XXX-XXX'); // returns 'one'
-test1.getBucket('ZZZ-ZZZ-ZZZ'); // returns 'two'
+test1.getBucket('XXX-XXX-XXX'); // returns 'red'
+test1.getBucket('ZZZ-ZZZ-ZZZ'); // returns 'blue'
 ```
 This creates a 50/50 split betwen "red" and "blue".
 
@@ -69,7 +69,7 @@ Unallocated space means that some results will not fall into any of the buckets.
 ### seed {Integer} [optional]
 Used to compute the hash that determines which bucket and `id` belongs to
 
-A custom seed is not necessary, but providing a one keeps your results from being predictable unless the seed is known. Please note that using a seed based on timestamp or other variable values will destroy the stickiness that keeps an `id` in the same bucket each time.
+A custom seed is not necessary, but providing one keeps your results from being predictable unless the seed is known. Please note that using a seed based on timestamp or other variable values will destroy the stickiness that keeps an `id` in the same bucket each time.
 
 ## Methods
 

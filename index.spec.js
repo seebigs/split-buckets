@@ -6,15 +6,15 @@ describe('SplitBuckets', () => {
         const split = new SplitBuckets('test1', [
             {
                 weight: 0.5,
-                value: 'one',
+                value: 'red',
             },
             {
                 weight: 0.5,
-                value: 'two',
+                value: 'blue',
             },
         ]);
-        expect(split.getBucket('XXX')).toBe('one');
-        expect(split.getBucket('YYY')).toBe('two');
+        expect(split.getBucket('XXX-XXX-XXX')).toBe('red');
+        expect(split.getBucket('ZZZ-ZZZ-ZZZ')).toBe('blue');
     });
 
     it('handles missing bucket config', () => {
